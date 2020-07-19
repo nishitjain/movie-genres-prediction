@@ -3,7 +3,6 @@ import argparse
 def training_parser():
     parser = argparse.ArgumentParser(description='List of arguments to train the model.')
     parser.add_argument('--seed', required=False, default=42, type=int, help='seed value')
-    parser.add_argument('--epochs', required=False, default=20, type=int, help='number of epochs')
     parser.add_argument('--images', required=True, type=str, help='the path to images directory')
     parser.add_argument('--csv', required=True, type=str, help='the path to csv file')
     parser.add_argument('--ckpt', required=True, type=str, help='the path to model checkpoints directory')
